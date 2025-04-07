@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object id="window" class="GtkWindow">
+    <property name="title">Fileshare client</property>
+    <property name="default-width">500</property>
+    <property name="default-height">500</property>
+    <child>
+      <object id="grid" class="GtkGrid">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <child>
+          <object id="username_entry" class="GtkEntry">
+            <property name="placeholder-text">Username</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object id="password_entry" class="GtkEntry">
+            <property name="placeholder-text">Password</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object id="connect_button" class="GtkButton">
+            <property name="label">Connect</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="column-span">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
